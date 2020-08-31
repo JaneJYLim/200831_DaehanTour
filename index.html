@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header id="header">
+        <div id="headerFlex">
+            <div id="headerLogo">
+                <a href="#"><img src="images/headerLogo.png" alt="헤더이미지" width="200" height="40"></a>
+            </div> <!-- div#headerLogo -->
+            <nav id="gnb">
+                <ul id="mainMenu" onmouseover="openSubMenu()" onmouseout="closeSubMenu()">
+                    <li><a href="#">해외여행</a></li>
+                    <li><a href="#">국내여행</a></li>
+                    <li><a href="#">제주도</a></li>
+                    <li><a href="#">렌트카</a></li>
+                </ul>
+                    <div id="subMenu" onmouseover="openSubMenu()" onmouseout="closeSubMenu()">
+                        <ul class="subMenu">
+                            <li><a href="#">동남아/대만</a></li>
+                            <li><a href="#">중국/홍콩</a></li>
+                            <li><a href="#">유럽/두바이</a></li>
+                            <li><a href="#">미주/하와이</a></li>
+                        </ul>
+                        <ul class="subMenu">
+                            <li><a href="#">서울/경기권</a></li>
+                            <li><a href="#">충청권</a></li>
+                            <li><a href="#">전라권</a></li>
+                            <li><a href="#">경상/강원권</a></li>
+                        </ul>
+                        <ul class="subMenu">
+                            <li><a href="#">버스여행</a></li>
+                            <li><a href="#">자유여행</a></li>
+                            <li><a href="#">호텔/펜션</a></li>
+                        </ul>
+                        <ul class="subMenu">
+                            <li><a href="#">국내 렌트카</a></li>
+                            <li><a href="#">국외 렌트카</a></li>
+                        </ul>
+                    </div>
+                </nav> <!-- nav#gnb -->
+            </div> <!-- div#headerFlex -->
+        </header> <!-- header#header -->
+        <div id="wrap">
+        <main id="slideImg">
+            <div id="slideShuttleFrame">
+                <a href="#">
+                    <img src="images/slideImg1.jpg" alt="슬라이드이미지1" width="1200" height="300">
+                    <!-- <p>늘 곁에, 더 가까이 대한투어</p> -->
+                </a>
+                <a href="#">
+                    <img src="images/slideImg2.jpg" alt="슬라이드이미지2" width="1200" height="300">
+                    <!-- <p>우정을 나누며!! 함께 가는 여행!!</p> -->
+                </a>
+                <a href="#">
+                    <img src="images/slideImg3.jpg" alt="슬라이드이미지3" width="1200" height="300">
+                    <!-- <p>열심히 일한 당신에게 드리는 휴가~</p> -->
+                </a>
+            </div>
+        </main> <!-- main#slideImg -->
+        <div id="contents">
+            <div id="bbsNotice">
+                <button type="button">공지사항</button>
+                <table>
+                    <tr onclick="openModal()">
+                        <td><a href="#">허니문 예약자 대상 경품 추첨 이벤트</a></td>
+                        <td><a href="#">2019/05/07</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">경품 추첨 이벤트 당첨자 발표</a></td>
+                        <td><a href="#">2019/05/03</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">BC카드 시스템 작업으로 인한 서비스 이용 제한 안내</a></td>
+                        <td><a href="#">2019/02/22</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">허니문 예약자 대상 경품 추첨 이벤트</a></td>
+                        <td><a href="#">2019/01/30</a></td>
+                    </tr>
+                </table>
+            </div> <!-- div#bbsNotice -->
+            <div id="bbsGallery">
+                <button type="button">갤러리</button>
+                <div id="gallery">
+                    <a href="#"><img src="images/gallery1.jpg" alt="갤러리1" width="120" height=140"></a>
+                    <a href="#"><img src="images/gallery2.jpg" alt="갤러리2" width="120" height=140"></a>
+                    <a href="#"><img src="images/gallery3.jpg" alt="갤러리3" width="120" height=140"></a>
+                </div>
+            </div> <!-- div#bbsGallery -->
+            <div id="shortcut">
+                <a href="#"><img src="images/shortcut.jpg" alt="바로가기" width="380" height="180"></a>
+            </div> <!-- div#shortcut -->
+        </div> <!-- div#contents -->
+    </div> <!-- div#wrap -->
+        <footer id="footer">
+            <div id="footerFlex">
+                <div id="copyright">
+                    copyright(c) 2010 Busan Infrastructure Corporation. all rights reserved 
+                </div> <!-- div#copyright -->
+                <div id="rightArea">
+                    <div id="sns">
+                        <a href="#"><img src="images/facebook.png" alt="페이스북" width="40" height="40"></a>
+                        <a href="#"><img src="images/instagram.png" alt="인스타그램" width="40" height="40"></a>
+                        <a href="#"><img src="images/twitter.png" alt="트위터"" width="40" height="40"></a>
+                    </div> <!-- div#sns -->
+                    <div id="familysite">
+                        <select name="" id="">
+                            <option>-패밀리사이트-</option>
+                            <option>하나여행사</option>
+                            <option>sm면세점</option>
+                            <option>투어팁스</option>
+                        </select>
+                    </div> <!-- div#famillysite -->
+                </div> <!-- div#rightArea -->
+            </div> <!-- div#footerFlex -->
+        </footer> <!-- footer#footer -->
+        <div id="modalLayerPopupBg">
+            <div id="layerPopup">
+                <h2>[당첨자 안내사항]</h2>
+                <hr>
+                <p>박람회 기간 (19.3.25 ~ 4.7) 허니문상품 예약 고객 중 추첨을 통해 <br>아래의 경품을 드립니다.</p>
+                <ul>
+                    <li>1등. LG 프라엘 LED 마스크 1쌍 - 당첨자 개별연락 / 제세공과금 본인부담</li>
+                    <li>2등. 한국 도자기 세트 6쌍 - 당첨자 개별연랑 / 제세공과금 본인부담</li>
+                    <li>3등. 하나투어 마일리지 5만 마일</li>
+                    <li>4등. 하나투어 마일리지 3만 마일</li>
+                </ul>
+                <div id="layerPopupbtn">
+                    <button type="button" onclick="closeModal()">&times; 닫기</button>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="script/script.js"></script>
+
+</body>
+</html>
